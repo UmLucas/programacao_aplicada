@@ -33,5 +33,32 @@ Ou criando um arquivo python no servidor, usando a extenção de arquivo .py e r
           printf("Olá meu nobre!");
           return 0;
         }
-4. 
+4. Output
+- Python:
+          s = "seg"
+          t = "terça"
+          q = "quarta"
+          bd1 = "BD1"
+          f1 = "Física 1"
+          c1 = "Cálculo 1"
+          print("|{:10}|{:10}|{:7}".format(s, t, q))
+          print("--------------------------------")
+          print("|{:10}|{:10}|{:10}".format(bd1, f1, c1))
+- C:
   
+                int main() {
+                  printf("| Segunda \t| Terça \t| Quarta \t|\n");
+                  printf("---------------------------------\n");
+                  printf("| BD1 \t\t| Física 1 \t| Cálculo 1 \t|\n");
+                  return 0;
+                }
+  
+5. Comentários
+6. Variáveis
+  - Tipos primitivos:
+    - int
+    - float
+    - char
+  - Obs:
+    Em python eu declaro classes e não variáveis.
+7. 
