@@ -35,15 +35,17 @@ Ou criando um arquivo python no servidor, usando a extenção de arquivo .py e r
         }
 4. Output
 - Python:
-          s = "seg"
-          t = "terça"
-          q = "quarta"
-          bd1 = "BD1"
-          f1 = "Física 1"
-          c1 = "Cálculo 1"
-          print("|{:10}|{:10}|{:7}".format(s, t, q))
-          print("--------------------------------")
-          print("|{:10}|{:10}|{:10}".format(bd1, f1, c1))
+  
+              s = "seg"
+              t = "terça"
+              q = "quarta"
+              bd1 = "BD1"
+              f1 = "Física 1"
+              c1 = "Cálculo 1"
+              print("|{:10}|{:10}|{:7}".format(s, t, q))
+              print("--------------------------------")
+              print("|{:10}|{:10}|{:10}".format(bd1, f1, c1))
+            }
 - C:
   
                 int main() {
@@ -61,4 +63,29 @@ Ou criando um arquivo python no servidor, usando a extenção de arquivo .py e r
     - char
   - Obs:
     Em python eu declaro classes e não variáveis.
-7. 
+
+## Aula 3:
+- Saída de dados em C: printf();
+- Entrada de dados em C: sacanf();
+  - é necessário acrescentar "%i" e "&variável", quando quero imprimir um número;
+  - para imprimir um nome é necessário usar char variavel[numero];
+- Exemplo 1:
+  
+          int main(void) {
+          char nome;
+          int idade;
+          
+          //A função printf é de saída de dados
+          //A funçao sancf é de entrada de dados
+          printf("Hello World\n"); //Função de saída de dados. \n adiciona uma nova linha
+          printf("Iniciando a aprendizagem da linguagem C\n");
+          
+          //printf("Digite seu nome: \n");
+          //scanf("%s", nome); //Como se fosse o input() da linguagem python
+          //printf("Seja bem-vindo, %s", nome);
+        
+          printf("Digite a sua idade: ");
+          scanf("%i", &idade);
+          printf("Sua idade  é: %i", idade);
+          return 0;
+        }
