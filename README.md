@@ -89,3 +89,63 @@ Ou criando um arquivo python no servidor, usando a extenção de arquivo .py e r
           printf("Sua idade  é: %i", idade);
           return 0;
         }
+- Exemplo 2:
+  
+      /*
+      Média do Aluno
+      */
+      
+      #include <stdio.h>
+      
+      int main(void)
+      {
+        int n1, suc, ant;
+      
+        printf("Digite a primeira nota do aluno: \n");
+        scanf("%f", &n1);
+        suc = n1 - 1;
+        ant = n1 + 1;
+        printf("O antecessor do seu némero é: %i\n", &ant);
+        printf("O sucessor do seu número é: %i\n", &suc);
+        return 0;
+      }
+
+- Exemplo 3:
+  
+
+- A liguagem C possui 4 tipos de dados primitios.
+  - Cada um armazena um tipo de informação possui um tamanho diferemte em bytes.
+  
+    - char   1 byte  Armazena caraceres.
+    - int    4 bytes Armazena números inteiros.
+    - float  4 bytes Armazena números reais até 6 casas decimais.
+    - double 8 bytes Armazena números reais até 15 casas decimais.
+- Exemplo 4:
+
+        char minhaLetra = 'R';
+        int copaDoBrasil = 1991;
+        float floatPi = 3.1415;
+        double doublePi = 3.1415;
+        printf("Caracter: \t\t%c. \t\t\tTamanho: %lucas byte(s).\n", minhaLetra, sizeof(minhaLetra));
+        printf("Valor int: \t\t%i. \t\tTamanho: %lucas byte(s).\n", copaDoBrasil, sizeof(copaDoBrasil));
+        printf("Valor float: \t%f. \tTamanho: %lucas byte(s).\n", floatPi, sizeof(floatPi));
+        printf("Valor double: \t%f. \tTamanho: %lucas byte(s).\n", doublePi, sizeof(doublePi));
+        
+        return 0;
+      }
+2. Modificadores de Tipos de Dados
+- A linguagem C possui 4 tipos de modificadores de tipo.
+- Estes modificadores definem um novo tamanho ou sinal para as variáveis.
+
+    - short     Divide pela metade o tamanho d uma variável.
+    - long      Dobra o tamanho de uma variável.
+    - signed    Define como números apenas positivos.
+    - unsigned  Define como números positivos e negaivos.
+- Exemplo:
+
+      signed int x = 200;
+      unsigned int y = -100;
+    
+      printf()
+      return 0;
+    }
